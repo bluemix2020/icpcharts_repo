@@ -1,7 +1,7 @@
 apiVersion: v1
 entries:
   grafana:
-  - created: 2017-08-05T17:05:55.927837704-04:00
+  - created: 2017-08-05T17:45:40.284777429-04:00
     description: The leading tool for querying and visualizing time series and metrics.
     digest: 6c4d39b4a07ff8e225ae64870396f0d0f5627afa42bfc37e95be43817a5b727f
     engine: gotpl
@@ -14,10 +14,10 @@ entries:
     sources:
     - https://github.com/grafana/grafana
     urls:
-    - https://balajays.github.io/charts/docs/stable/grafana-0.4.2.tgz
+    - https://bluemix2020.github.io/icpcharts_repo/stable/grafana-0.4.2.tgz
     version: 0.4.2
   prometheus:
-  - created: 2017-08-05T17:05:55.929519464-04:00
+  - created: 2017-08-05T17:45:40.285580053-04:00
     description: Prometheus is a monitoring system and time series database.
     digest: eb6bd2ddd4a44f3506092e94771bb843c16be68f4fbfac5a348f7d0cf16a60e6
     engine: gotpl
@@ -33,6 +33,6 @@ entries:
     - https://github.com/prometheus/pushgateway
     - https://github.com/kubernetes/kube-state-metrics
     urls:
-    - https://balajays.github.io/charts/docs/stable/prometheus-4.1.0.tgz
+    - https://bluemix2020.github.io/icpcharts_repo/stable/prometheus-4.1.0.tgz
     version: 4.1.0
-generated: 2017-08-05T17:05:55.927016598-04:00
+generated: 2017-08-05T17:45:40.284128761-04:00
