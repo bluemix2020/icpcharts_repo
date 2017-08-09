@@ -1,7 +1,7 @@
 apiVersion: v1
 entries:
   grafana:
-  - created: 2017-08-06T10:32:33.689212312-04:00
+  - created: 2017-08-09T11:20:42.969556867-04:00
     description: The leading tool for querying and visualizing time series and metrics.
     digest: 6c4d39b4a07ff8e225ae64870396f0d0f5627afa42bfc37e95be43817a5b727f
     engine: gotpl
@@ -16,10 +16,57 @@ entries:
     urls:
     - https://bluemix2020.github.io/icpcharts_repo/stable/grafana-0.4.2.tgz
     version: 0.4.2
+  mq:
+  - apiVersion: v1
+    appVersion: 9.0.1.0
+    created: 2017-08-09T11:20:42.970183049-04:00
+    description: MQ is IBM's Message Queueing Chart for Kuberenetes.
+    digest: f292f001a0d7f401282d48723d220e3a8402647a0bd0dafa59293e1c5dfafb87
+    home: https://www.ibm.com/support/knowledgecenter/SSFKSJ_9.0.0/com.ibm.mq.helphome.v90.doc/WelcomePagev9r0.htm
+    maintainers:
+    - email: xxyy@xxyy.com
+      name: xxyy
+    name: mq
+    sources:
+    - https://hub.docker.com/r/ibmcom/mq/
+    urls:
+    - https://bluemix2020.github.io/icpcharts_repo/stable/mq-0.1.1.tgz
+    version: 0.1.1
+  pgweb:
+  - apiVersion: v1
+    appVersion: 9.0.1.0
+    created: 2017-08-09T11:20:42.97078734-04:00
+    description: pgweb is a web-based Postgres UI.
+    digest: 9ca93976ad0ac4ce962fa51ad4640a0d5a50e5e72a56c2f39881e81d3ad8d3b9
+    home: https://github.com/sosedoff/pgweb
+    maintainers:
+    - email: xxyy@xxyy.com
+      name: xxyy
+    name: pgweb
+    sources:
+    - https://github.com/sosedoff/pgweb
+    urls:
+    - https://bluemix2020.github.io/icpcharts_repo/stable/pgweb-0.1.1.tgz
+    version: 0.1.1
+  postgres_statefulset:
+  - created: 2017-08-09T11:20:42.972382162-04:00
+    description: Stolon Helm Chart for Kubernetes.
+    digest: fe75c6f76645b81a10274e883f34de9ecd70cb8a075044305e22eb85dc31868c
+    home: https://github.com/sorintlab/stolon
+    maintainers:
+    - email: ipaq.lw@gmail.com
+      name: Sergey Nuzhdin
+    name: postgres_statefulset
+    sources:
+    - https://github.com/sorintlab/stolon
+    - https://github.com/lwolf/stolon-chart
+    urls:
+    - https://bluemix2020.github.io/icpcharts_repo/stable/postgres_statefulset-0.1.1.tgz
+    version: 0.1.1
   prometheus:
-  - created: 2017-08-06T10:32:33.690346842-04:00
+  - created: 2017-08-09T11:20:42.974647137-04:00
     description: Prometheus is a monitoring system and time series database.
-    digest: 0408d9f92ccf3036262841f1c8fd9de005388c58d2156d624255ce17f4fac480
+    digest: f2314404a830696cd86c01b17a1776edc2b6e39c93ce99cb41a1c29aaca77248
     engine: gotpl
     home: https://prometheus.io/
     icon: https://raw.githubusercontent.com/prometheus/prometheus.github.io/master/assets/prometheus_logo-cb55bb5c346.png
@@ -35,4 +82,4 @@ entries:
     urls:
     - https://bluemix2020.github.io/icpcharts_repo/stable/prometheus-4.1.0.tgz
     version: 4.1.0
-generated: 2017-08-06T10:32:33.687860183-04:00
+generated: 2017-08-09T11:20:42.965999192-04:00
