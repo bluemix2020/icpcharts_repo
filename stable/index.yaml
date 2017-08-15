@@ -1,7 +1,39 @@
 apiVersion: v1
 entries:
+  db2:
+  - apiVersion: v1
+    created: 2017-08-14T21:03:10.226876261-04:00
+    description: A Helm chart for IBM Db2 Server 11.1.2.2 - Developer-C Edition
+    digest: 5610b35c138c431c971a79a0789fead8570d5624b024feaf8ed5510119e8042e
+    name: db2
+    urls:
+    - https://bluemix2020.github.io/icpcharts_repo/stable/db2-0.1.0.tgz
+    version: 0.1.0
+  gitlab-ce:
+  - created: 2017-08-14T21:03:10.228571944-04:00
+    description: GitLab Community Edition
+    digest: b6c1ad5cb2f4781d5772bb8d66b46ca254674deb961d0fb29902ef24131cd842
+    home: https://about.gitlab.com
+    icon: https://gitlab.com/uploads/group/avatar/6543/gitlab-logo-square.png
+    keywords:
+    - git
+    - ci
+    - deploy
+    - issue tracker
+    - code review
+    - wiki
+    maintainers:
+    - email: gtaylor@gc-taylor.com
+      name: Greg Taylor
+    name: gitlab-ce
+    sources:
+    - https://hub.docker.com/r/gitlab/gitlab-ce/
+    - https://docs.gitlab.com/omnibus/
+    urls:
+    - https://bluemix2020.github.io/icpcharts_repo/stable/gitlab-ce-0.1.9.tgz
+    version: 0.1.9
   grafana:
-  - created: 2017-08-09T11:46:58.540865249-04:00
+  - created: 2017-08-14T21:03:10.229694871-04:00
     description: The leading tool for querying and visualizing time series and metrics.
     digest: 6c4d39b4a07ff8e225ae64870396f0d0f5627afa42bfc37e95be43817a5b727f
     engine: gotpl
@@ -16,10 +48,43 @@ entries:
     urls:
     - https://bluemix2020.github.io/icpcharts_repo/stable/grafana-0.4.2.tgz
     version: 0.4.2
+  mongodb-replicaset:
+  - created: 2017-08-14T21:03:10.230866704-04:00
+    description: NoSQL document-oriented database that stores JSON-like documents
+      with dynamic schemas, simplifying the integration of data in content-driven
+      applications.
+    digest: eb5e2bb94da96f63cda7b5576b0dba6471cf135b3018b1771853e77b32ced0f6
+    home: https://github.com/mongodb/mongo
+    icon: https://webassets.mongodb.com/_com_assets/cms/mongodb-logo-rgb-j6w271g1xn.jpg
+    maintainers:
+    - email: ramanathana@google.com
+      name: Anirudh Ramanathan
+    name: mongodb-replicaset
+    sources:
+    - https://github.com/mongodb/mongo
+    urls:
+    - https://bluemix2020.github.io/icpcharts_repo/stable/mongodb-replicaset-1.1.0.tgz
+    version: 1.1.0
+  mongodbui:
+  - apiVersion: v1
+    appVersion: 9.0.1.0
+    created: 2017-08-14T21:03:10.231376044-04:00
+    description: mongodbui is a web-based MongoDB UI.
+    digest: d838dad20a997417c767bf272191e9476d54d7c21a429e423c983f4e90c8e251
+    home: https://github.com/sosedoff/pgweb
+    maintainers:
+    - email: xxyy@xxyy.com
+      name: xxyy
+    name: mongodbui
+    sources:
+    - https://github.com/sosedoff/pgweb
+    urls:
+    - https://bluemix2020.github.io/icpcharts_repo/stable/mongodbui-0.1.1.tgz
+    version: 0.1.1
   mq:
   - apiVersion: v1
     appVersion: 9.0.1.0
-    created: 2017-08-09T11:46:58.542022157-04:00
+    created: 2017-08-14T21:03:10.23206986-04:00
     description: MQ is IBM's Message Queueing Chart for Kuberenetes.
     digest: facb2ce030e404e3d97a74e0c67f2dabe98f4579ec143eac51bc2ec2d2bc40e2
     home: https://www.ibm.com/support/knowledgecenter/SSFKSJ_9.0.0/com.ibm.mq.helphome.v90.doc/WelcomePagev9r0.htm
@@ -35,7 +100,7 @@ entries:
   pgweb:
   - apiVersion: v1
     appVersion: 9.0.1.0
-    created: 2017-08-09T11:46:58.542687961-04:00
+    created: 2017-08-14T21:03:10.232731817-04:00
     description: pgweb is a web-based Postgres UI.
     digest: 3165b8e992c96b16bec4e52e2f744b256bb6d47fa6b7e8c15247b10978054680
     home: https://github.com/sosedoff/pgweb
@@ -49,7 +114,7 @@ entries:
     - https://bluemix2020.github.io/icpcharts_repo/stable/pgweb-0.1.1.tgz
     version: 0.1.1
   postgres_statefulset:
-  - created: 2017-08-09T11:46:58.5439911-04:00
+  - created: 2017-08-14T21:03:10.234124541-04:00
     description: Stolon Helm Chart for Kubernetes.
     digest: fe75c6f76645b81a10274e883f34de9ecd70cb8a075044305e22eb85dc31868c
     home: https://github.com/sorintlab/stolon
@@ -64,7 +129,7 @@ entries:
     - https://bluemix2020.github.io/icpcharts_repo/stable/postgres_statefulset-0.1.1.tgz
     version: 0.1.1
   prometheus:
-  - created: 2017-08-09T11:46:58.545697541-04:00
+  - created: 2017-08-14T21:03:10.235736617-04:00
     description: Prometheus is a monitoring system and time series database.
     digest: f2314404a830696cd86c01b17a1776edc2b6e39c93ce99cb41a1c29aaca77248
     engine: gotpl
@@ -82,4 +147,36 @@ entries:
     urls:
     - https://bluemix2020.github.io/icpcharts_repo/stable/prometheus-4.1.0.tgz
     version: 4.1.0
-generated: 2017-08-09T11:46:58.537490749-04:00
+  ucd:
+  - apiVersion: v1
+    appVersion: 9.0.1.0
+    created: 2017-08-14T21:03:10.236217163-04:00
+    description: ucds is a kubernetes deployment of the Urban Code Deploy image
+    digest: c92216a352ab77a21978fbb9cdfb8911337c3830188f8be0b6824be348596eaf
+    home: https://hub.docker.com/r/ibmcom/ucds/
+    maintainers:
+    - email: xxyy@xxyy.com
+      name: xxyy
+    name: ucd
+    sources:
+    - https://hub.docker.com/r/ibmcom/ucds/
+    urls:
+    - https://bluemix2020.github.io/icpcharts_repo/stable/ucd-0.1.1.tgz
+    version: 0.1.1
+  wast:
+  - apiVersion: v1
+    appVersion: 9.0.1.0
+    created: 2017-08-14T21:03:10.23682836-04:00
+    description: wast is a kubernetes deployment of the WAS Traditional Image
+    digest: 686bca119cffa8777fe8e1e87e6637e9a0c48d94baa574e863aa29879f2967cd
+    home: https://hub.docker.com/r/ibmcom/websphere-traditional/
+    maintainers:
+    - email: xxyy@xxyy.com
+      name: xxyy
+    name: wast
+    sources:
+    - https://hub.docker.com/r/ibmcom/websphere-traditional/
+    urls:
+    - https://bluemix2020.github.io/icpcharts_repo/stable/wast-0.1.1.tgz
+    version: 0.1.1
+generated: 2017-08-14T21:03:10.204907735-04:00
